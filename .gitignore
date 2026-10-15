@@ -1,0 +1,31 @@
+# ===== 打包产物（不需要进 GitHub）=====
+*.zip
+*.crx
+*.rar
+*.7z
+*.tar.gz
+
+# 解压 zip 时误产生的嵌套目录（如 fastmoss-qr-keep/fastmoss-qr-keep/）
+fastmoss-qr-keep/
+
+# ===== 系统文件 =====
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ===== 编辑器 / IDE =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ===== 日志与临时文件 =====
+*.log
+*.tmp
+*.bak
+
+# ===== 依赖与构建产物（当前插件无需，预留）=====
+node_modules/
+dist/
+build/

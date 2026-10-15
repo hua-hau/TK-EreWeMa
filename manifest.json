@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "TikTok 二维码常驻",
+  "version": "1.4.0",
+  "description": "让 FastMoss、郑和数据等 TikTok 选品平台的商品页 TikTok 扫码二维码自动弹出、一直保持展开，不会自动关闭，并支持悬浮置顶、跟随滚动，方便随时用手机扫描。",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.fastmoss.com/*", "*://*.zhenghedata.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "TikTok 二维码常驻",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="title">TikTok 二维码常驻</div>
+
+    <label class="row">
+      <span class="label">启用扩展</span>
+      <input type="checkbox" id="enabled" checked>
+    </label>
+
+    <label class="row">
+      <span class="label">阻止二维码自动关闭</span>
+      <input type="checkbox" id="forceShow" checked>
+    </label>
+
+    <label class="row">
+      <span class="label">悬浮置顶显示（跟随滚动）</span>
+      <input type="checkbox" id="float" checked>
+    </label>
+
+    <label class="row">
+      <span class="label">自动弹出二维码（免鼠标）</span>
+      <input type="checkbox" id="autoOpen" checked>
+    </label>
+
+    <div class="tip">在 FastMoss / 郑和数据商品详情页生效：打开页面即自动弹出并保持展开，同时复制一份到右下角悬浮窗口，拖动标题栏可移动位置。</div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

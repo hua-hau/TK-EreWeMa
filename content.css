@@ -1,0 +1,77 @@
+/* 强制展开的二维码弹窗 */
+.fm-qr-force-show,
+[data-fm-qr-force] {
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: none !important;
+  pointer-events: auto !important;
+  z-index: 999999 !important;
+}
+
+/* 悬浮二维码窗口 */
+#fm-qr-keep-float {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  width: 228px;
+  background: #ffffff;
+  border: 1px solid rgba(22, 24, 35, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 10px 32px rgba(22, 24, 35, 0.22);
+  z-index: 2147483000;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+  user-select: none;
+  overflow: hidden;
+}
+
+#fm-qr-keep-float .fm-qr-keep-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: #161823;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: move;
+}
+
+#fm-qr-keep-float .fm-qr-keep-close {
+  border: 0;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+  line-height: 1;
+  padding: 2px 6px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#fm-qr-keep-float .fm-qr-keep-close:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+#fm-qr-keep-float .fm-qr-keep-body {
+  padding: 12px;
+  background: #ffffff;
+}
+
+#fm-qr-keep-float .fm-qr-keep-body img,
+#fm-qr-keep-float .fm-qr-keep-body canvas {
+  width: 100% !important;
+  height: auto !important;
+  display: block;
+  image-rendering: pixelated;
+}
+
+#fm-qr-keep-float .fm-qr-keep-tip {
+  padding: 0 12px 10px;
+  font-size: 12px;
+  color: #7a7f8a;
+  text-align: center;
+}
+
+#fm-qr-keep-float.fm-qr-keep-dragging {
+  opacity: 0.92;
+  transition: none;
+}
